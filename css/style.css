@@ -1,0 +1,151 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-family:Outfit;
+    font-size: 18px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-color: hsl(216, 50%, 16%);
+    padding: 20px;
+    height: 75%;
+    width: 22%;
+    border-radius: 10px;
+    box-shadow: 20px 20px 10px  hsl(212, 65%, 10%) , 0px 0px 10px 30px hsl(217deg 53% 12%)
+}
+
+.img-container{
+    height: 50%;
+    width: 100%;
+    position: relative;
+}
+
+#img{
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:hsl(178, 100%, 50%, 0.6);
+    opacity: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+   /* visibility: hidden; */
+}
+.overlay:hover{
+    opacity:1;
+    border-radius: 10px;
+    /* -webkit-transition: opacity .25s ease-in-out .0s;
+    transition: opacity .25s ease-in-out .0s; */
+}
+.box-1{
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.box-1:hover{
+    color: hsl(178, 100%, 50%);
+}
+.box-2{
+    color: hsl(215, 51%, 70%);
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.lis-item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.icon{
+    display: flex;
+    color: hsl(178, 100%, 50%);
+}
+.icon #diamond{
+    margin-right: 7px;
+}
+.clock{
+    display: flex;
+    color:hsl(215, 51%, 70%);
+}
+.clock #clock-icon{
+    margin-right: 7px;
+}
+
+hr {
+   color:hsl(215, 32%, 27%);
+}
+
+.pic-1{
+    color:hsl(215, 32%, 27%) ;
+    font-size: 14px;
+    color: hsl(215, 51%, 70%);
+    position: relative;
+    margin-top: 20px;
+    
+}
+#jules-pic{
+    position: absolute;
+    margin: 0;
+    margin-right: 10px;
+    top: -5px;
+    padding: 0;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+#creator-credit{
+    /* margin: 0; */
+    margin-left: 40px;
+    font-weight:600;
+}
+#name{
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+#name:hover{
+    color: hsl(178, 100%, 50%);
+}
+.attribution { 
+    margin-top: 20px;
+    font-size: 11px; 
+    font-weight: 600;
+    text-align: center;
+    font-size: 12px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 768px){
+    body{
+        height: 100vh;
+        width: 100vw;
+    }
+    .container{
+        height: 70%;
+        width: 80%;
+    }
+}
